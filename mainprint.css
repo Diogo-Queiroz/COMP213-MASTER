@@ -1,0 +1,12 @@
+nav {
+  display: none;
+}
+hr {
+  display: none;
+}
+img {
+  display: none;
+}
+main p {
+  page-break-before: always;
+}

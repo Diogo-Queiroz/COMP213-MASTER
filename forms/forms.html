@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- This is a comment section everything here is not rendered in the page
+    Diogo Fernandes de Queiroz - COMP 213 - #301082196
+  -->
+  <head>
+    <meta charset="utf-8">
+    <title>COMP213 - W24 - Web Interface Design - Forms</title>
+    <link rel="stylesheet" href="forms.css">
+  </head>
+  <body>
+    <div class="container">
+      <form name="comp213-form" id="comp213-id-form" method="post" 
+        action="mailto:dferna64@my.centennialcollege.ca">
+        <input type="hidden" value="Today is March 4">
+        <fieldset>
+          <legend>Identification Area</legend>
+          <div class="grid-form-id">
+            <div class="grid-form-id-cell">
+              <label for="id_email">Email:</label>
+              <input type="email" name="email" id="id_email" required placeholder="email@email.com">
+            </div>
+              <div class="grid-form-id-cell">
+              <label for="id_name">Name:</label><input type="text" name="name" id="id_name" required placeholder="Your Full Name">
+            </div>
+              <div class="grid-form-id-cell">
+              <label for="id_pass">Pasword:</label><input type="password" name="password" id="id_pass" required placeholder="Password">
+            </div>
+          </div>
+        </fieldset>
+        <input type="checkbox" name="browers" id="id_browser_firefox" value="Firefox">
+        <label for="id_browser_firefox">Firefox</label>
+        <input type="checkbox" name="browers" id="id_browsers_opera" value="Opera">
+        <label for="id_browsers_opera">Opera</label>
+        <input type="checkbox" name="browers" id="id_browsers_vivaldi" value="Vivaldi">
+        <label for="id_browsers_vivaldi">Vivaldi</label>
+        <input type="radio" name="OS" id="id_os_windows" value="Windows">
+        <label for="id_os_windows">Windows</label>
+        <input type="radio" name="OS" id="id_os_mac" value="MacOS">
+        <label for="id_os_mac">MacOS</label>
+        <label for="id_other_info">Other</label>
+        <textarea name="other_info" id="id_other_info" required>Other Info</textarea>
+        <label for="id_selection">Selection</label>
+        <select name="selection" id="id_selection" size="3" multiple>
+          <option>Selection 1</option>
+          <option>Selection 2</option>
+          <option>Selection 3</option>
+          <option>Selection 4</option>
+        </select>
+        <label for="id_url">Portfolio</label>
+        <input type="url" name="url" id="id_url" placeholder="Portofilo URL">
+        <label for="id_datalist">Colors</label>
+        <input type="text" name="colors" id="id_datalist" list="colors">
+        <datalist id="colors">
+          <option>Purple</option>
+          <option>Aqua</option>
+          <option>Bluesky</option>
+          <option>Orange</option>
+          <option>Green</option>
+          <option>Yellow</option>
+        </datalist>
+        <label for="id_slider">Volume</label>
+        <input type="range" min="0" max="5" name="volume" id="id_slider">
+        <label for="id_number">Qtd</label>
+        <input type="number" min="0" max="5" name="qtd" id="id_number">
+        <label for="id_date">Birthday</label>
+        <input type="date" name="bday" id="id_date">
+        <label for="id_color">Color pallete</label>
+        <input type="color" name="color" id="id_color">
+        <input type="submit" value="Confirm"><input type="reset" value="Clear">
+      </form>
+    </div>
+  </body>
+</html>

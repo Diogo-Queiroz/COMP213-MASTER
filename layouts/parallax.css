@@ -1,0 +1,10 @@
+.parallax_01 {
+  background-image: url("pools.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.parallax_02 {
+  background-image: url("lake.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
