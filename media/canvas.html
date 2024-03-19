@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- This is a comment section everything here is not rendered in the page
+    Diogo Fernandes de Queiroz - COMP 213 - #301082196
+  -->
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COMP213 - W24 - Media and Interactivity Basics - Canvas</title>
+    
+  </head>
+  <body>
+    <div>
+      <h1 id="title">Canvas Example</h1>
+      <canvas id="my_canvas"></canvas>
+    </div>
+    <div>
+      <button type="button" onclick="getDate()">Get Date</button>
+      <p id="date"></p>
+    </div>
+
+    <script type="text/javascript">
+      function drawMe()
+      {
+        var canvas = document.getElementById("my_canvas");
+        if (canvas.getContext)
+        {
+          var context = canvas.getContext("2d");
+          context.fillStyle = "rgb(255, 0, 0)";
+          context.font = "bold 2.5em Verdana";
+          context.fillText("My Canvas", 30, 40);
+          context.fillStyle = "rgba(0, 0, 200, 0.5)";
+          context.fillRect(30, 5, 150, 35);
+          context.fillStyle = "rgba(0, 200, 0, 0.5)";
+          context.beginPath();
+          context.moveTo(30,40);
+          context.lineTo(30, 150);
+          context.lineTo(70, 100);
+          context.lineTo(100, 150);
+          context.lineTo(100, 40);
+          context.stroke();
+        }
+      }
+      drawMe();
+      function getDate()
+      {
+        document.getElementById("date").innerHTML = Date();
+        document.getElementById('title').style.color = "#F00";
+      }
+    </script>
+  </body>
+</html>
