@@ -1,0 +1,60 @@
+SPECIALS {
+  display: block;
+  width: 80%;
+  margin-left:auto;
+  margin-right: auto;
+  margin-top: 15px;
+}
+
+TITLE, MESSAGE, ARTIST, CD, TRACK, PRICEUK, PRICEUS, NAME {
+  display: block;
+  color: black;
+  font-family: Verdana, sans-serif;
+}
+
+MESSAGE {
+  border: 1px green solid;
+  background-color: rgba(100, 255, 100, 0.25);
+  padding: 10px;
+  color: rgb(55, 10, 55);
+  font-size: 1.5em;
+}
+
+TITLE {
+  font-size: 3em;
+  color: blue;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+CD {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+  padding: 8px;
+  border: 1px solid #333;
+  border-radius: 15px;
+  box-shadow: 3px 3px 10px #000;
+}
+
+NAME {
+  font-size: 1.8em;
+  text-align: center;
+  color: #009;
+}
+
+ARTIST {
+  font-size: 1.4em;
+}
+
+PRICEUK, PRICEUS {
+  font-size: 1.2em;
+  color: #900;
+}
+
+TRACK {
+  display: list-item;
+  margin-left: 25pt;
+  list-style-type: circle;
+}
